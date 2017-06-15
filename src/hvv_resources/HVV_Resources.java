@@ -78,6 +78,18 @@ public class HVV_Resources {
     private final ImageIcon m_icoAnimatedProgress30;
     public ImageIcon getIconAnimatedProgress30() { return m_icoAnimatedProgress30;}
     
+    private final ImageIcon m_icoLayout1x1;
+    public ImageIcon getIconLayout1x1() { return m_icoLayout1x1;}
+    
+    private final ImageIcon m_icoLayout1x2;
+    public ImageIcon getIconLayout1x2() { return m_icoLayout1x2;}
+    
+    private final ImageIcon m_icoLayout2x1;
+    public ImageIcon getIconLayout2x1() { return m_icoLayout2x1;}
+    
+    private final ImageIcon m_icoLayout2x2;
+    public ImageIcon getIconLayout2x2() { return m_icoLayout2x2;}
+    
     private ImageIcon LoadIconShortCut( String strFilePathName) {
         File f = new File( strFilePathName);
         if(f.exists() && !f.isDirectory()) {
@@ -109,5 +121,10 @@ public class HVV_Resources {
         
         m_icoAnimatedProgress25 = LoadIconShortCut( strAMSRoot + "/res/images/progress_25.gif");
         m_icoAnimatedProgress30 = LoadIconShortCut( strAMSRoot + "/res/images/progress_30.gif");
+        
+        m_icoLayout1x1 = LoadIconShortCut( strAMSRoot + "/res/images/layout.1x1.gif");
+        m_icoLayout1x2 = LoadIconShortCut( strAMSRoot + "/res/images/layout.1x2.gif");
+        m_icoLayout2x1 = LoadIconShortCut( strAMSRoot + "/res/images/layout.2x1.gif");
+        m_icoLayout2x2 = LoadIconShortCut( strAMSRoot + "/res/images/layout.2x2.gif");
     }
 }
